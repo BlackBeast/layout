@@ -11,8 +11,9 @@ body {
 }
 
 .side-bar {
-  float: left;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   background-color: #1D2027;
   width: 200px;
 }
@@ -56,9 +57,10 @@ body {
 
 main {
   float: right;
-  left: 200px;
   height: 100%;
-  width: calc(100% - 200px);
+  width: 100%;
+  padding-left: 200px;
+  box-sizing: border-box;
 }
 
 .header-contents {
@@ -69,17 +71,18 @@ main {
 
 .calendar-contents {
   background-color: #D4D6D8;
-  height: calc(100% - 340px);
+  height:100%;
 }
 
 .agenda-wrapper {
   border: 1px solid #E7E7E7;
   border-radius: 4px;
   float: left;
-  width: calc(59% - 22px);
-  height: calc(100% - 44px);
+  width: 58%;
+  height: 63%;
+  height: calc(100% - 372px);
   background-color: #F1F1F1;
-  margin: 22px;
+  margin: 1%;
   margin-right: 0;
 }
 
@@ -87,9 +90,10 @@ main {
   border: 1px solid #E7E7E7;
   border-radius: 4px;
   float: right;
-  width: calc(39% - 22px);
-  height: calc(100% - 44px);
+  width: 39%;
+  height: 63%;
+  height: calc(100% - 372px);
   background-color: #F1F1F1;
-  margin: 22px;
+  margin: 1%;
   margin-left: 0;
 }
